@@ -9,8 +9,10 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:react-example": "turbo run dev --filter react-example",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ts": "turbo run ts"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
@@ -20,6 +22,8 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@changesets/cli": "^2.26.0"
+  },
   "packageManager": "pnpm@7.8.0"
 }
